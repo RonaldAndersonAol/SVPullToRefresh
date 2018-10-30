@@ -7,9 +7,10 @@
 // https://github.com/samvermette/SVPullToRefresh
 //
 
-#import <QuartzCore/QuartzCore.h>
 #import "UIScrollView+SVInfiniteScrolling.h"
 
+#if __has_include(<UIKit/UIKit.h>)
+#import <QuartzCore/QuartzCore.h>
 
 static CGFloat const SVInfiniteScrollingViewHeight = 60;
 
@@ -302,3 +303,4 @@ UIEdgeInsets scrollViewOriginalContentInsets;
 }
 
 @end
+#endif

@@ -7,6 +7,7 @@
 // https://github.com/samvermette/SVPullToRefresh
 //
 
+#if __has_include(<UIKit/UIKit.h>)
 #import <UIKit/UIKit.h>
 #import <AvailabilityMacros.h>
 
@@ -65,3 +66,4 @@ typedef NS_ENUM(NSUInteger, SVPullToRefreshState) {
 - (void)triggerRefresh DEPRECATED_ATTRIBUTE;
 
 @end
+#endif

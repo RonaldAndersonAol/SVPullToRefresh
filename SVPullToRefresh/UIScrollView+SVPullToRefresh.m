@@ -7,8 +7,10 @@
 // https://github.com/samvermette/SVPullToRefresh
 //
 
-#import <QuartzCore/QuartzCore.h>
 #import "UIScrollView+SVPullToRefresh.h"
+
+#if __has_include(<UIKit/UIKit.h>)
+#import <QuartzCore/QuartzCore.h>
 
 //fequal() and fequalzro() from http://stackoverflow.com/a/1614761/184130
 #define fequal(a,b) (fabs((a) - (b)) < FLT_EPSILON)
@@ -744,3 +746,4 @@ static char UIScrollViewPullToRefreshView;
 	CGColorSpaceRelease(colorSpace);
 }
 @end
+#endif

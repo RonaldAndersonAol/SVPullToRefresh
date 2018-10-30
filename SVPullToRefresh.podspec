@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name     = 'SVPullToRefresh'
   s.version  = '0.4.1'
-  s.platform = :ios, '5.0'
+  #s.platform = :ios, '5.0'
   s.license  = 'MIT'
   s.summary  = 'Give pull-to-refresh to any UIScrollView with 1 line of code.'
   s.homepage = 'https://github.com/samvermette/SVPullToRefresh'
@@ -19,4 +19,10 @@ Pod::Spec.new do |s|
   s.source_files = 'SVPullToRefresh/*.{h,m}'
   s.preserve_paths  = 'Demo'
   s.requires_arc = true
+  
+  s.ios.deployment_target = 5.0
+  s.tvos.deployment_target = 10.0
+  s.watchos.deployment_target = 3.0
+  s.osx.deployment_target = 10.10
+  
 end

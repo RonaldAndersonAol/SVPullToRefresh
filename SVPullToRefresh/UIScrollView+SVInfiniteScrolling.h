@@ -7,6 +7,7 @@
 // https://github.com/samvermette/SVPullToRefresh
 //
 
+#if __has_include(<UIKit/UIKit.h>)
 #import <UIKit/UIKit.h>
 
 @class SVInfiniteScrollingView;
@@ -43,3 +44,4 @@ typedef NSUInteger SVInfiniteScrollingState;
 - (void)stopAnimating;
 
 @end
+#endif
